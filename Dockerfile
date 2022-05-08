@@ -1,5 +1,5 @@
 FROM alpine:3.15.4
-RUN apk add git fzf bash make nerd-fonts
+RUN apk add git fzf bash make nerd-fonts ripgrep fd diffutils git gzip wget build-base
 RUN apk add neovim --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 RUN  adduser -Ds /bin/bash astro
 USER astro
